@@ -2,6 +2,34 @@
 
 > Adds global variables that should be rendered across all views in Express
 
+Whenever you need to include same values across all Express views, use `render-vars`
+
+```js
+var app = express();
+var renderVar = include('render-vars');
+renderVar(app, 'foo', 'bar');
+renderVar(app, 'life', 42);
+// somewhere in the controller
+function index(req, res) {
+    var locals = {
+      title: 'Home'
+    };
+    res.render('home', locals);
+}
+```
+
+The `home.ejs` (or any template language) will have local variables at the render time
+
+    {
+        title: 'Home',
+        foo: 'bar',
+        life: 42
+    }
+
+Useful for including version, commit, and other common information across each view.
+
+See blog post [Deployed commit](http://glebbahmutov.com/blog/deployed-commit/).
+
 ### Small print
 
 Author: Gleb Bahmutov &copy; 2015

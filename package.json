@@ -1,6 +1,6 @@
 {
   "name": "render-vars",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Adds global variables that should be rendered across all views in Express",
   "main": "index.js",
   "scripts": {
@@ -29,5 +29,9 @@
   "devDependencies": {
     "pre-git": "0.2.1"
   },
-  "pre-commit": "npm version"
+  "pre-commit": "npm version",
+  "dependencies": {
+    "check-more-types": "1.7.2",
+    "lazy-ass": "0.5.8"
+  }
 }
