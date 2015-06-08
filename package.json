@@ -1,0 +1,33 @@
+{
+  "name": "render-vars",
+  "version": "0.1.0",
+  "description": "Adds global variables that should be rendered across all views in Express",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bahmutov/render-vars.git"
+  },
+  "keywords": [
+    "express",
+    "middleware",
+    "plugin",
+    "variable",
+    "variables",
+    "render",
+    "view",
+    "helper"
+  ],
+  "author": "Gleb Bahmutov <gleb.bahmutov@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bahmutov/render-vars/issues"
+  },
+  "homepage": "https://github.com/bahmutov/render-vars",
+  "devDependencies": {
+    "pre-git": "0.2.1"
+  },
+  "pre-commit": "npm version"
+}
